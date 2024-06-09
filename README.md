@@ -1,0 +1,2 @@
+# teste-theme
+testing
