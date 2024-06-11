@@ -60,9 +60,8 @@ const updateBreadcrumbs = (url) => {
                       success: function(categoryResponse) {
                           if (categoryResponse && categoryResponse.category) {
                               const categoryTitle = categoryResponse.category.name;
-                              console.log("categoryTitle")
                               const categoryURL = `/c/${categoryResponse.category.slug}`;
-
+                              console.log(topicTitle)
                               $("#breadcrumbsContainer").append(`
                                   <li class="breadcrumb-item">
                                       <a href="${categoryURL}">${categoryTitle}</a>
