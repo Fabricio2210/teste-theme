@@ -14,6 +14,11 @@ const updateBreadcrumbs = (url) => {
                     <a class="home" href="/"><< Forum</a>
                 </li>
             `);
+            $("footer").append(`
+                <li class="breadcrumb-item">
+                    <a class="home" href="/"><< Forum</a>
+                </li>
+            `);
         }
     };
 
@@ -34,7 +39,7 @@ const updateBreadcrumbs = (url) => {
                             ${categoryTitle}
                         </li>
                     `);
-                    $("#topic-footer-buttons").append(`
+                    $("footer").append(`
                         <li class="breadcrumb-item active">
                             ${categoryTitle}
                         </li>
@@ -77,7 +82,7 @@ const updateBreadcrumbs = (url) => {
                                         ${topicTitle}
                                     </li>
                                 `);
-                                $("#topic-footer-buttons").append(`
+                                $("footer").append(`
                                     <li class="breadcrumb-item">
                                         <a href="${categoryURL}">${categoryTitle}</a>
                                     </li>
