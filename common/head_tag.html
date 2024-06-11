@@ -26,12 +26,10 @@
                         <a class="home" href="/"><< Forum</a>
                     </li>
                 `);
-                $(".topic-list-bottom").append(`
-                    <div id= "breadcrumbsContainerFooter">
-                        <li class="breadcrumb-item">
-                            <a class="home" href="/"><< Forum</a>
-                        </li>
-                    </div>
+                $("#footerBread").append(`
+                    <li class="breadcrumb-item">
+                        <a class="home" href="/"><< Forum</a>
+                    </li>
                 `);
             }
         };
@@ -49,6 +47,11 @@
                     if (response && response.category && response.category.name) {
                         const categoryTitle = response.category.name;
                         $("#breadcrumbsContainer").append(`
+                            <li class="breadcrumb-item active">
+                                ${categoryTitle}
+                            </li>
+                        `);
+                        $("#footerBread").append(`
                             <li class="breadcrumb-item active">
                                 ${categoryTitle}
                             </li>
@@ -83,7 +86,6 @@
                                 if (categoryResponse && categoryResponse.category) {
                                     const categoryTitle = categoryResponse.category.name;
                                     const categoryURL = `/c/${categoryResponse.category.slug}`;
-                                    console.log(topicTitle);
                                     $("#breadcrumbsContainer").append(`
                                         <li class="breadcrumb-item">
                                             <a href="${categoryURL}">${categoryTitle}</a>
@@ -92,15 +94,13 @@
                                             ${topicTitle}
                                         </li>
                                     `);
-                                    $("#topic-footer-buttons").append(`
-                                            <div id= "breadcrumbsContainerFooter">
-                                                <li class="breadcrumb-item">
-                                                    <a href="${categoryURL}">${categoryTitle}</a>
-                                                </li>
-                                                <li class="breadcrumb-item active">
-                                                    ${topicTitle}
-                                                </li>
-                                            </div>
+                                    $("#footerBread").append(`
+                                        <li class="breadcrumb-item">
+                                            <a href="${categoryURL}">${categoryTitle}</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">
+                                            ${topicTitle}
+                                        </li>
                                     `);
                                 }
                             },
@@ -115,8 +115,6 @@
                 }
             });
         }
-    }                             
+    }                              
                           
 </script>
-
-<script type="text/javascript" src="./teste.js"></script>
