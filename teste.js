@@ -1,4 +1,5 @@
 api.onPageChange((url) => {
+    console.log("teste")
     updateBreadcrumbs(url);
 });
 
