@@ -59,7 +59,7 @@ const updateBreadcrumbs = (url) => {
                       success: function(categoryResponse) {
                           if (categoryResponse && categoryResponse.category) {
                               const categoryTitle = categoryResponse.category.name;
-                              console.log(categoryTitle)
+                              console.log("categoryTitle")
                               const categoryURL = `/c/${categoryResponse.category.slug}`;
 
                               $("#breadcrumbsContainer").append(`
