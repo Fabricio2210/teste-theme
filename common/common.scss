@@ -35,7 +35,7 @@
       display: flex;
       align-items: center;
       padding-right: 0.5rem;
-
+      color: solid black !important;
       & + .breadcrumb-item::before {
           content: "/";
           display: inline-block;
