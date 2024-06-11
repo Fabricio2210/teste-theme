@@ -35,6 +35,11 @@
                                 ${categoryTitle}
                             </li>
                         `);
+                        $("#topic-footer-buttons").append(`
+                            <li class="breadcrumb-item active">
+                                ${categoryTitle}
+                            </li>
+                        `);
                     }
                 },
                 error: function(error) {
@@ -73,6 +78,14 @@
                                             ${topicTitle}
                                         </li>
                                     `);
+                                    $("#topic-footer-buttons").append(`
+                                        <li class="breadcrumb-item">
+                                            <a href="${categoryURL}">${categoryTitle}</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">
+                                            ${topicTitle}
+                                        </li>
+                                    `);
                                 }
                             },
                             error: function(error) {
@@ -86,5 +99,5 @@
                 }
             });
         }
-    }    
+    }        
         </script>
