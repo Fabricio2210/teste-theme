@@ -15,10 +15,12 @@
                         <a class="home" href="/"><< Forum</a>
                     </li>
                 `);
-                $("#breadcrumbsContainerFooter").append(`
-                    <li class="breadcrumb-item">
-                        <a class="home" href="/"><< Forum</a>
-                    </li>
+                $(".topic-list-bottom").append(`
+                    <div id= "breadcrumbsContainerFooter">
+                        <li class="breadcrumb-item">
+                            <a class="home" href="/"><< Forum</a>
+                        </li>
+                    </div>
                 `);
             }
         };
@@ -40,10 +42,12 @@
                                 ${categoryTitle}
                             </li>
                         `);
-                        $("#breadcrumbsContainerFooter").append(`
-                            <li class="breadcrumb-item active">
-                                ${categoryTitle}
-                            </li>
+                        $(".topic-list-bottom").append(`
+                            <div id= "breadcrumbsContainerFooter">
+                                <li class="breadcrumb-item active">
+                                    ${categoryTitle}
+                                </li>
+                            </div>
                         `);
                     }
                 },
@@ -83,13 +87,15 @@
                                             ${topicTitle}
                                         </li>
                                     `);
-                                    $("#breadcrumbsContainerFooter").append(`
-                                        <li class="breadcrumb-item">
-                                            <a href="${categoryURL}">${categoryTitle}</a>
-                                        </li>
-                                        <li class="breadcrumb-item active">
-                                            ${topicTitle}
-                                        </li>
+                                    $(".topic-list-bottom").append(`
+                                            <div id= "breadcrumbsContainerFooter">
+                                                <li class="breadcrumb-item">
+                                                    <a href="${categoryURL}">${categoryTitle}</a>
+                                                </li>
+                                                <li class="breadcrumb-item active">
+                                                    ${topicTitle}
+                                                </li>
+                                            </div>
                                     `);
                                 }
                             },
