@@ -26,13 +26,6 @@
                         <a class="home" href="/"><< Forum</a>
                     </li>
                 `);
-                $(".topic-list-bottom").append(`
-                    <div id= "breadcrumbsContainerFooter">
-                        <li class="breadcrumb-item">
-                            <a class="home" href="/"><< Forum</a>
-                        </li>
-                    </div>
-                `);
             }
         };
     
@@ -53,14 +46,6 @@
                                 ${categoryTitle}
                             </li>
                         `);
-                        $(".topic-list-bottom").append(`
-                            <div id= "breadcrumbsContainerFooter">
-                                 <li class="breadcrumb-item active">
-                                    ${categoryTitle}
-                                </li>
-                            </div>
-                        `);
-    
                     }
                 },
                 error: function(error) {
@@ -99,16 +84,6 @@
                                             ${topicTitle}
                                         </li>
                                     `);
-                                    $("#topic-footer-buttons").append(`
-                                            <div id= "breadcrumbsContainerFooter">
-                                                <li class="breadcrumb-item">
-                                                    <a href="${categoryURL}">${categoryTitle}</a>
-                                                </li>
-                                                <li class="breadcrumb-item active">
-                                                    ${topicTitle}
-                                                </li>
-                                            </div>
-                                    `);
                                 }
                             },
                             error: function(error) {
@@ -122,6 +97,6 @@
                 }
             });
         }
-    }                             
+    }          
                           
 </script>
