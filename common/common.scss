@@ -60,7 +60,7 @@
       }
 
       &.active {
-          color: solid black !important;
+          color: var(--secondary);
           font-weight: bold;
       }
   }
