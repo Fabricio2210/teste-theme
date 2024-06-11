@@ -41,6 +41,13 @@ const updateBreadcrumbs = (url) => {
                             ${categoryTitle}
                         </li>
                     `);
+                    $(".topic-list-bottom").append(`
+                        <div id= "breadcrumbsContainerFooter">
+                             <li class="breadcrumb-item active">
+                                ${categoryTitle}
+                            </li>
+                        </div>
+                    `);
 
                 }
             },
