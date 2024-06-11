@@ -40,7 +40,7 @@
                                 ${categoryTitle}
                             </li>
                         `);
-                        $("footer").append(`
+                        $("#breadcrumbsContainerFooter").append(`
                             <li class="breadcrumb-item active">
                                 ${categoryTitle}
                             </li>
@@ -83,7 +83,7 @@
                                             ${topicTitle}
                                         </li>
                                     `);
-                                    $("footer").append(`
+                                    $("#breadcrumbsContainerFooter").append(`
                                         <li class="breadcrumb-item">
                                             <a href="${categoryURL}">${categoryTitle}</a>
                                         </li>
@@ -104,5 +104,5 @@
                 }
             });
         }
-    }            
+    }                       
         </script>
