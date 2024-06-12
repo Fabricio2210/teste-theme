@@ -76,8 +76,6 @@
 }
 
 .breadcrumb-item {
-    display: flex;
-    align-items: center;
     padding-right: 0.5rem;
 
     & + .breadcrumb-item::before {
@@ -104,7 +102,7 @@
     }
 
     &.active {
-        color: var(--secondary);
+        color: var(--primary-medium);
         font-weight: bold;
     }
 }
