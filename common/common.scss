@@ -68,7 +68,10 @@
 
 .footer_container {
     background-color: var(--secondary);
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100vh;
     border: 1px solid #5c5c5c;
 }
