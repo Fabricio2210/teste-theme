@@ -66,12 +66,12 @@
   }
 }
 
-.footer_container {
+#footer_container {
     background-color: var(--secondary);
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    border-radius: .25rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
     border: 1px solid #5c5c5c;
     width: 100% !important;
     padding-left: 11% !important;
