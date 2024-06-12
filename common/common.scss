@@ -69,7 +69,7 @@
 }
 
 .footer_container {
-    background-color:#222222;
+    background-color: var(--secondary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
