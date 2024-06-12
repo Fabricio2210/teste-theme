@@ -10,7 +10,7 @@
             $("#news").show();
         }
     };
-     api.onPageChange((url) => {
+    api.onPageChange((url) => {
         updateBreadcrumbs(url);
     });
     
@@ -22,6 +22,11 @@
             if (url === '/') {
             } else {
                 $("#breadcrumbsContainer").append(`
+                    <li class="breadcrumb-item">
+                        <a class="home" href="/"><< Forum</a>
+                    </li>
+                `);
+                $("#col2").append(`
                     <li class="breadcrumb-item">
                         <a class="home" href="/"><< Forum</a>
                     </li>
@@ -43,6 +48,12 @@
                         const categoryTitle = response.category.name;
                         $("#breadcrumbsContainer").append(`
                             <li class="breadcrumb-item active">
+                                ${categoryTitle}
+                            </li>
+                        `);
+                        $("#col2").append(`
+                            <li class="breadcrumb-item">
+                                 <li class="breadcrumb-item active">
                                 ${categoryTitle}
                             </li>
                         `);
@@ -84,6 +95,14 @@
                                             ${topicTitle}
                                         </li>
                                     `);
+                                    $("#col2").append(`
+                                         <li class="breadcrumb-item">
+                                            <a href="${categoryURL}">${categoryTitle}</a>
+                                        </li>
+                                        <li class="breadcrumb-item active">
+                                            ${topicTitle}
+                                        </li>
+                                    `);
                                 }
                             },
                             error: function(error) {
@@ -97,6 +116,6 @@
                 }
             });
         }
-    }          
+    }                       
                           
 </script>
