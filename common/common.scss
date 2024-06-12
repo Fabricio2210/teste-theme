@@ -85,7 +85,9 @@
         align-items: center;
         padding-right: .5rem;
     }
-
+    li {
+        list-style-type: none;
+    }
     .breadcrumb-item {
         padding-right: 0.5rem;
 
