@@ -69,7 +69,6 @@
 }
 
 .footer_container {
-    background-color: var(--secondary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -94,6 +93,7 @@
             padding-right: 0.5rem;
     
             &+.breadcrumb-item::before {
+                content: "/";
                 display: inline-block;
                 padding-right: 0.5rem;
                 color: var(--primary-med-or-secondary-med);
