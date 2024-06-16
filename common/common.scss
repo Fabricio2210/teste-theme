@@ -131,7 +131,7 @@
     background-color: var(--secondary) !important;
     text-align: start;
     margin-top: -120px;
-    width: 72%;
+    width: 100%;
 }
 .d-header {
     height: 6em;
@@ -142,12 +142,12 @@
 
 .navbar {
     display: flex;
-    padding: 10px;
     a {
         text-decoration: none;
         font-style: italic;
         border-right: 1px solid #5c5c5c;
-        margin-left: 2px !important;
+        padding-left: 2px !important;
+        padding-right: 2px !important;
 
         &:hover {
             text-decoration: underline;
