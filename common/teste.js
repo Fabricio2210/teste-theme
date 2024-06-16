@@ -53,8 +53,7 @@
                             </li>
                         `);
                         $("#col2").append(`
-                            <li class="breadcrumb-item">
-                                 <li class="breadcrumb-item active">
+                              <li class="breadcrumb-item active">
                                 ${categoryTitle}
                             </li>
                         `);
