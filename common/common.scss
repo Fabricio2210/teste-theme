@@ -78,7 +78,7 @@
     align-items: stretch;
 
     .footer_breadcrumbs  {
-         background-color: var(--secondary);
+        background-color: var(--secondary);
         border: 1px solid #5c5c5c;
         width: 100% !important;
         padding-left: 11% !important;
@@ -144,16 +144,6 @@
 
 .navbar {
     display: flex;
-    background-color: #333;
+    background-color: var(--secondary) !important;
     padding: 10px;
-}
-.navbar a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-}
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
 }
