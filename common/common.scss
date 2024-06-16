@@ -110,7 +110,7 @@
             a {
                 text-decoration: none;
                 font-style: italic;
-    
+                color: var(--tertiary) !important;
                 &:hover {
                     text-decoration: underline;
                 }
