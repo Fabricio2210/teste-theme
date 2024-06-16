@@ -74,49 +74,52 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    border: 1px solid #5c5c5c;
-    width: 80% !important;
-    padding-left: 11% !important;
-    padding-top: 2px !important;
-    padding-bottom: 2px !important;
 
-    #col2 {
-        display: flex;
-        align-items: center;
-        padding-right: .5rem;
-    }
-    li {
-        list-style-type: none;
-    }
-    .breadcrumb-item {
-        padding-right: 0.5rem;
+    .footer_breadcrumbs  {
+        border: 1px solid #5c5c5c;
+        width: 100% !important;
+        padding-left: 11% !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
 
-        &+.breadcrumb-item::before {
-            content: "/";
-            display: inline-block;
+        #col2 {
+            display: flex;
+            align-items: center;
+            padding-right: .5rem;
+        }
+        li {
+            list-style-type: none;
+        }
+        .breadcrumb-item {
             padding-right: 0.5rem;
-            color: var(--primary-med-or-secondary-med);
-            font-weight: normal;
-        }
-
-        .home {
-            position: relative;
-            padding-left: .5rem;
-            padding-right: 0;
-        }
-
-        a {
-            text-decoration: none;
-            font-style: italic;
-
-            &:hover {
-                text-decoration: underline;
+    
+            &+.breadcrumb-item::before {
+                content: "/";
+                display: inline-block;
+                padding-right: 0.5rem;
+                color: var(--primary-med-or-secondary-med);
+                font-weight: normal;
             }
-        }
-
-        &.active {
-            color: var(--primary-medium);
-            font-weight: bold;
+    
+            .home {
+                position: relative;
+                padding-left: .5rem;
+                padding-right: 0;
+            }
+    
+            a {
+                text-decoration: none;
+                font-style: italic;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+    
+            &.active {
+                color: var(--primary-medium);
+                font-weight: bold;
+            }
         }
     }
 }
