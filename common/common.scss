@@ -161,16 +161,3 @@
         }
     }
 }
-$category_classes: "general", "site-feedback";
-
-.below-header-banner {
-    display: none;
-}
-
-@each $cat in $category_classes {
-    body.category-#{$cat} {
-        #category-#{$cat}-banner.below-header-banner {
-            display: block;
-        }
-    }
-}
