@@ -129,7 +129,8 @@
 
 .test {
     background-color: var(--secondary) !important;
-    text-align:center;
+    display: flex;
+    align-items: center;
     width: 100%;
 }
 .d-header {
